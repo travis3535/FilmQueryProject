@@ -104,7 +104,7 @@ public class Film {
 		return "Film [filmID=" + filmID + ", filmTitle=" + filmTitle + ", filmDesc=" + filmDesc + ", releaseFilm="
 				+ releaseFilm + ", langFilm=" + langFilm + ", rentalDuration=" + rentalDuration + ", rentalRate="
 				+ rentalRate + ", lengthFilm=" + lengthFilm + ", replaceCost=" + replaceCost + ", ratingFilm="
-				+ ratingFilm + ", specialFeatures=" + specialFeatures + ", actor=" + actor + "]";
+				+ ratingFilm + ", specialFeatures=" + specialFeatures + " actor= " + actor + "]";
 	}
 	@Override
 	public int hashCode() {
