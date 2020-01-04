@@ -6,7 +6,6 @@ public class Actor {
 	private int actorId;
 	private String actorFirstName;
 	private String actorLastName;
-	private List<Film> films;
 	
 	
 	
@@ -33,7 +32,7 @@ public class Actor {
 	@Override
 	public String toString() {
 		return "Actor [actorId=" + actorId + ", actorFirstName=" + actorFirstName + ", actorLastName=" + actorLastName
-				+ "]";
+				+ "]" + "\n";
 	}
 	@Override
 	public int hashCode() {
