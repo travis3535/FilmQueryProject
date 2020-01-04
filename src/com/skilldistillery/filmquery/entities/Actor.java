@@ -1,9 +1,17 @@
 package com.skilldistillery.filmquery.entities;
 
+import java.util.List;
+
 public class Actor {
 	private int actorId;
 	private String actorFirstName;
 	private String actorLastName;
+	private List<Film> films;
+	
+	
+	
+	
+	
 	public int getActorId() {
 		return actorId;
 	}
