@@ -60,6 +60,7 @@ public class FilmQueryApp {
 			System.out.println("( 2 ) Look up a film by a search keyword");
 			System.out.println("( 3 ) Exit the application");
 			int userInput = kb.nextInt();
+
 			if (userInput == 1) {
 				System.out.println("Enter Film ID");
 				int userFilmId = kb.nextInt();
@@ -72,12 +73,21 @@ public class FilmQueryApp {
 					System.out.println(db.findFilmById(userFilmId));
 				}
 			}
+
 			if (userInput == 2) {
 				System.out.println("Enter Search Keyword");
 				String keyword = kb.next();
-				// need to create new method that uses keywork search.
+
+				if (db.findFilmByKeyword(keyword) == null) {
+					System.out.println("No film found by that keyword");
+					continue;
+				} else {
+					System.out.println(db.findFilmByKeyword(keyword));
+//					db.findFilmByKeyword(keyword);
+				}
 
 			}
+
 			if (userInput == 3) {
 				System.out.println("Exiting Application...");
 				break;

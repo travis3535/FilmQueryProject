@@ -15,8 +15,15 @@ public class Film {
 	private String ratingFilm;
 	private String specialFeatures;
 	private List<Actor> actor;
+	private String language;
 	
 	
+	public String getLanguage() {
+		return language;
+	}
+	public void setLanguage(String language) {
+		this.language = language;
+	}
 	public List<Actor> getActor() {
 		return actor;
 	}
@@ -101,10 +108,8 @@ public class Film {
 	
 	@Override
 	public String toString() {
-		return "Film [filmID=" + filmID + ", filmTitle=" + filmTitle + ", filmDesc=" + filmDesc + ", releaseFilm="
-				+ releaseFilm + ", langFilm=" + langFilm + ", rentalDuration=" + rentalDuration + ", rentalRate="
-				+ rentalRate + ", lengthFilm=" + lengthFilm + ", replaceCost=" + replaceCost + ", ratingFilm="
-				+ ratingFilm + ", specialFeatures=" + specialFeatures + " actor= " + actor + "]";
+		return "Film ID = " + filmID + "\n" + "Film Title = " + filmTitle + "\n" + "Film Description = " + filmDesc + "\n" +  "Release Year = "
+				+ releaseFilm + "\n" + "Language = " + language + "\n"  + "Film Rating = " + ratingFilm + "\n" + "Actors = "+ "\n" + actor + "\n";
 	}
 	@Override
 	public int hashCode() {
