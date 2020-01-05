@@ -51,7 +51,6 @@ public class FilmQueryApp {
 
 	private void startUserInterface(Scanner input) {
 		// menu
-		// need to loop?
 
 		while (true) {
 			System.out.println("Please select a menu option");
@@ -62,7 +61,8 @@ public class FilmQueryApp {
 			int userInput = kb.nextInt();
 
 			if (userInput == 1) {
-				System.out.println("Enter Film ID");
+				System.out.println("Enter Film ID :");
+				
 				int userFilmId = kb.nextInt();
 				if (db.findFilmById(userFilmId) == null) {
 					System.out.println("No film found by that ID");

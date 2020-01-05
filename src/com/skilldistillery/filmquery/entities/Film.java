@@ -17,7 +17,28 @@ public class Film {
 	private List<Actor> actor;
 	private String language;
 	
+	public Film() {
+		
+	}
 	
+	public Film(int filmID, String filmTitle, String filmDesc, int releaseFilm, int langFilm, String ratingFilm) {
+		super();
+		this.filmID = filmID;
+		this.filmTitle = filmTitle;
+		this.filmDesc = filmDesc;
+		this.releaseFilm = releaseFilm;
+		this.langFilm = langFilm;
+//		this.rentalDuration = rentalDuration;
+//		this.rentalRate = rentalRate;
+//		this.lengthFilm = lengthFilm;
+//		this.replaceCost = replaceCost;
+		this.ratingFilm = ratingFilm;
+//		this.specialFeatures = specialFeatures;
+//		this.actor = actor;
+//		this.language = language;
+	}
+	
+
 	public String getLanguage() {
 		return language;
 	}
